@@ -22,5 +22,17 @@ public class intArrays {
 
         }
         System.out.println(result);
+
+        System.out.println("-------------------------------");
+        //int value of sume up
+
+        String s = "44335566";
+        int total =0;
+        char[] c= s.toCharArray();
+
+        for (int j = 0; j <c.length ; j++) {
+            total += Integer.parseInt(String.valueOf(c[j]));
+        }
+        System.out.println(total);
     }
 }
