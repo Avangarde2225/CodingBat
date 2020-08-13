@@ -1,6 +1,8 @@
 package InterviewQuestions;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class arrs {
     public static void main(String[] args) {
 
         // replace index 2 with boston
@@ -17,5 +19,16 @@ public class Arrays {
 
             System.out.println(s1[i]);
         }
+
+        System.out.println("Array 2------------------");
+        int arr[] = {564, 56, 6, 34, 33, 1, 3, 5, 6, 7, 8, 9};
+        Arrays.sort(arr);
+
+        for (int i = 0; i <arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
+
+
+
 }
