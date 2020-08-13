@@ -6,10 +6,19 @@ public class SwitchStatements {
     public static void main(String[] args) {
         int checkingBalance = 1000;
         int activity;
+        System.out.println("1.Display balance");
+        System.out.println("2.Deposit");
+        System.out.println("3.Withdraw");
+        System.out.println("4.Logout");
+        System.out.println("Total balance is " + checkingBalance);
+        System.out.println("What would you like to do?");
+
 
         Scanner scan = new Scanner(System.in);
 
         activity = scan.nextInt();
+
+
 
         switch(activity){
             case 1:
