@@ -18,6 +18,14 @@ public class Maps {
             System.out.println(top.getKey() + " " + top.getValue());
         }
 
+        System.out.println("---------------------");
+
+        for(String key: map.keySet()){
+            System.out.println("Keys " + key);
+        }
+        for(Integer value: map.values()){
+            System.out.println("Values " + value);
+        }
 
 
     }
