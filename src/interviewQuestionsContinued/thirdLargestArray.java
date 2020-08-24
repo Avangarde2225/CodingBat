@@ -20,18 +20,22 @@ public class thirdLargestArray {
         int secondLargest= Integer.MIN_VALUE;
         int thirdLargest = Integer.MIN_VALUE;
 
-
-        for (int i = 1;i < arr_size ; i++)
-            if (arr[i] > first)
+        for (int i = 1; i < arr_size; i++) {
+            /* If current element is greater than first,
+        then update first, second and third */
+            if (arr[i] > first) {
+                thirdLargest = secondLargest;
+                secondLargest = first;
                 first = arr[i];
-
-        for (int i = 0; i < arr_size ; i++)
-            if (arr[i] > secondLargest && arr[i] < first)
+            } /* If arr[i] is in between first and second */
+            else if (arr[i] > secondLargest) {
+                thirdLargest= secondLargest;
                 secondLargest = arr[i];
-
-        for (int i = 0; i < arr_size ; i++)
-            if (arr[i] > thirdLargest && arr[i] < secondLargest)
+            } /* If arr[i] is in between second and third */
+            else if (arr[i] > thirdLargest) {
                 thirdLargest = arr[i];
+            }
+        }
 
         System.out.printf("The third Largest " + "element is %d\n", thirdLargest);
     }
