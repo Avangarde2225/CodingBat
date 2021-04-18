@@ -25,6 +25,7 @@ public class arrs {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
+
     }
 
 
