@@ -12,6 +12,6 @@ public class ReversedSentence {
                 reversedString = " "+  words[i] + reversedString;
 
         }
-        System.out.println( reversedString);
+        System.out.println( reversedString.trim());
     }
 }
