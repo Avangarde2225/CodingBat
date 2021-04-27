@@ -6,11 +6,12 @@ import java.util.Map;
 
 public class LetterCount {
     static void charCount(String str){
-
+        String s = " ";
+        s = str.toLowerCase();
 
         Map<Character, Integer> map = new HashMap<>();
 
-        char [] newChar = str.toCharArray();
+        char [] newChar = s.toCharArray();
 
         for (char c : newChar) {
             if(map.containsKey(c)){
@@ -29,6 +30,6 @@ public class LetterCount {
 
     public static void main(String[] args) {
         String s = "Babalamamama";
-        charCount(s.toLowerCase(Locale.ROOT));
+        charCount(s);
     }
 }
